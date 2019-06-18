@@ -4,8 +4,7 @@
 #include <stdio.h>
 
 int len(int rut){
-  int cont = 0;
-  int i;
+  int cont = 0, i;
   while(rut>0){
     rut = rut/10;
     cont++;
@@ -15,15 +14,8 @@ int len(int rut){
 
 int calculo(int rut){
   /* Variables locales */
-  int largo = len(rut);
-  int val[largo];
-  int cont = 2;
-  int sum = 0;
+  int largo = len(rut), val[largo], cont = 2, sum = 0, res, i, mod_f, resta;
   float mod;
-  int res;
-  int i;
-  int mod_f;
-  int resta;
   /* Fin variables locales */
 
   for(i=0;i<=largo;i++){
