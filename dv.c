@@ -1,10 +1,10 @@
 /*  Author: Alejandro */
-/*  E-mail: farias@voxa.cl */
+/*  E-mail: farias_io@pm.me */
 
 #include <stdio.h>
 
 int len(int rut){
-  int cont = 0, i;
+  int cont = 0;
   while(rut>0){
     rut = rut/10;
     cont++;
@@ -38,7 +38,7 @@ int calculo(int rut){
   return res;
 }
 
-void main(void){
+int main(void){
   int rut, digito;
   printf("Calcular digito verificador RUT\n");
   printf("Ingrese el RUT sin digito: ");
@@ -52,4 +52,5 @@ void main(void){
     printf("El digito vertificador es: %d\n", digito);
     printf("El RUT completo es: %d-%d\n", rut, digito);
   }
+  return 0;
 }
